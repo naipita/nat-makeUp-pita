@@ -31,6 +31,12 @@
     border-radius: 100%;
     width: 200px;
     margin: 25px;
+
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+    transition: 5s;
 }
 
 .menu{
@@ -58,6 +64,9 @@ a{
 /* CONTENIDO PRINCIPAL */
 .main{ 
     grid-area: main; 
+    animation-name: animacion;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 h1{
@@ -67,6 +76,7 @@ h1{
     text-align: center;
     padding: 25px;
 }
+
 
 /* INICIO */
 .sectionFlex{
@@ -94,6 +104,7 @@ h1{
     flex-direction: column;   
     justify-content: center; 
     align-items: center;
+    background-image: linear-gradient(to left,rgb(252, 231, 217),rgb(250, 182, 137));
 }
 
 .mainQuienSoy p{
@@ -114,7 +125,7 @@ h1{
 /* SERVICIOS */
 .mainServicios{
     text-align: center;
-    margin-bottom: 25px;
+    background-image: linear-gradient(to left,rgb(252, 231, 217),rgb(250, 182, 137));
 }
 
 .mainServicios h3{
@@ -144,8 +155,22 @@ h1{
     width: 240px;    
 }
 
+.form input:focus{
+    background-color: rgb(250, 235, 215);
+}
+
 .centrado{
     text-align: center;
+}
+
+.boton:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 127, 80);
+    transition: 2s;
+}
+
+textarea:focus{
+    background-color: rgb(250, 235, 215);    
 }
 
 /* TURNOS */
@@ -165,6 +190,20 @@ h1{
 
 .formTurnos input{
     margin: 1px;
+}
+
+.formTurnos input:focus{
+    background-color: rgb(250, 235, 215);
+}
+
+.botonTurnos:hover{
+    transform: scale(1.1);
+    background-color: rgb(250, 235, 215);
+    transition: 2s;
+}
+
+.focus:focus{
+    background-color: rgb(250, 235, 215);
 }
 
 /* PIE DE PÁGINA */
@@ -190,8 +229,27 @@ h1{
     margin: 15px;
 }
 
+/* KEYFRAMES */
+@keyframes animacion{
+    0%{
+        background-color: rgb(255, 229, 204);
+    }
+    25%{
+        background-color: rgb(254,235,215);
+    }
+    50%{
+        background-color: rgb(253,220,200);
+    }
+    75%{
+        background-color: rgb(250, 182, 137);
+    }
+    100%{
+        background-color: rgb(253, 179, 136);
+    }
+}
+
 /* MEDIA QUERY */
-@media(max-width: 420px){
+@media(max-width: 768px){
     .grid{
         grid-template-areas: 
         "header header header"
@@ -208,6 +266,6 @@ h1{
     .mainTurnos{
         background-size: cover;
     }
-    
+        
 }
   

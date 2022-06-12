@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="shorcut icon" href="../img/Logo.jpg">
     <link rel="stylesheet" href="../css/style.css">
     <title>Nat-MakeUp Face&Body | Turnos</title>
@@ -27,11 +28,11 @@
     </header>
     <!-- CONTENIDO PRINCIPAL -->
     <main class="mainTurnos">
-        <h1>Turnos</h1>
+        <h1 class="wow animate__animated animate__pulse">Turnos</h1>
         <form class="formTurnos" action="#" method="get">
             <label>
                 <input type="text" placeholder="Nombre Completo" name="nombre-completo">
-                <select name="sexo">
+                <select class="focus" name="sexo">
                     <option value="selección">Seleccione su sexo</option>
                     <option value="femenino">Femenino</option>
                     <option value="masculino">Masculino</option>
@@ -40,17 +41,17 @@
                 <input type="tel" placeholder="Teléfono" name="telefono">
                 <input type="email" placeholder="Email" name="email">
                 <input type="text" placeholder="Tratamiento" name="tratamiento">
-                <select name="dispinibilidad-horaria">
+                <select class="focus" name="dispinibilidad-horaria">
                     <option value="indique-disponibilidad">Indique su Disponibilidad Horaria</option>
                     <option value="maniana">Por la Mañana</option>
                     <option value="tarde">Por la tarde</option>
                     <option value="todo-el-dia">Todo el Día</option>
                 </select>                
                 <input type="date" placeholder="Fecha Solicitada" name="fecha">
-                <p class="centrado">Comentarios</p>
+                <p class="centrado WOW animate__animated animate__backInLeft">Comentarios</p>
                 <textarea name="comentarios" cols="46" rows="5"></textarea>
             </label>
-            <input type="submit" value="Enviar">                
+            <input class="botonTurnos" type="submit" value="Enviar">                
         </form>
     </main>
     <!-- PIE DE PÁGINA -->
@@ -73,5 +74,9 @@
             </li>
         </ul>
     </footer>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

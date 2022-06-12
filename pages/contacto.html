@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="shorcut icon" href="../img/Logo.jpg">
     <link rel="stylesheet" href="../css/style.css">
     <title>Nat-MakeUp Face&Body | Contacto</title>
@@ -27,7 +28,7 @@
     </header>
     <!-- CONTENIDO PRINCIPAL -->
     <main class="mainContacto">
-        <h1>Contacto</h1>
+        <h1 class="wow animate__animated animate__pulse">Contacto</h1>
         <form class="form" action="#" method="get">
             <label>
                 <input type="text" placeholder="Nombre Completo" name="nombreCompleto">                
@@ -41,9 +42,9 @@
             <input type="checkbox" name="opcion">            
             <span>Consulta</span>
             <input type="checkbox" name="opcion">
-            <p>Deja tu Comentario</p>
+            <p class="wow animate__animated animate__backInLeft">Deja tu Comentario</p>
             <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar">
+            <input class="boton" type="submit" value="Enviar">
         </form>
         <h3 class="centrado">Contactanos</h3>
         <p class="centrado">Teléfono: 1165187387</p>
@@ -69,5 +70,9 @@
             </li>
         </ul>
     </footer>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
