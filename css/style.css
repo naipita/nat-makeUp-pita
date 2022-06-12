@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+.body{
+    background-color: rgb(248, 245, 240);
+}
+
+.grid{  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr .5fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    "footer footer footer footer footer";
+}
+
+/* ENCABEZADO */
+.header{ 
+    grid-area: header;
+    background-color: rgb(250, 235, 215);
+    display: flex;
+    justify-content: space-between;   
+}
+
+.logo{
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 100%;
+    width: 200px;
+    margin: 25px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{   
+    padding: 10px; 
+    margin: 20px;
+    margin-top: 100px;
+    list-style: none;   
+}
+
+a{
+    color: rgb(255, 127, 80);
+    text-decoration: underline;
+}
+
+.menu a:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+/* CONTENIDO PRINCIPAL */
+.main{ 
+    grid-area: main; 
+}
+
+h1{
+    color: rgb(255, 127, 80);
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+    padding: 25px;
+}
+
+/* INICIO */
+.sectionFlex{
+    display: flex;
+    justify-content: center;
+}
+
+.sectionFlex p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 200px;
+    margin-top: 50px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.imgIndex{
+    max-width: 250px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* QUIÉN SOY */
+.mainQuienSoy{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;
+}
+
+.mainQuienSoy p{
+    font-family: cursive;
+    max-width: 700px;
+}
+
+.mainQuienSoy li{
+    font-family: cursive;
+    list-style: none;
+}
+
+.imgQuienSoy{
+    max-width: 400px;
+    margin: 10px;
+}
+
+/* SERVICIOS */
+.mainServicios{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.mainServicios h3{
+    margin: 15px;
+}
+
+.mainServicios li{
+    list-style: none;
+}
+
+/* CONTACTO */
+.mainContacto{
+    background-image: url(../img/local.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 200px;
+    justify-content: space-around;    
+    justify-items: center;   
+}
+
+.form input{
+    margin: 5px;    
+    width: 240px;    
+}
+
+.centrado{
+    text-align: center;
+}
+
+/* TURNOS */
+.mainTurnos{
+    background-image: url(../img/consultorio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.formTurnos{
+    display: grid;
+    grid-auto-columns: min-content;
+    justify-content: center;
+    grid-row-gap: 15px;
+}
+
+.formTurnos input{
+    margin: 1px;
+}
+
+/* PIE DE PÁGINA */
+.footer{
+    grid-area: footer; 
+    background-color: rgb(250, 235, 215);
+    display: flex;
+    justify-content: center;
+}
+
+.footerFlex{
+    display: flex;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.redes{
+    width: 40px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+}
+
+/* MEDIA QUERY */
+@media(max-width: 420px){
+    .grid{
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";      
+    }
+    .header{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .mainTurnos{
+        background-size: cover;
+    }
+    
+}
+  
