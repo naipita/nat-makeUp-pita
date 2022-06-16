@@ -60,6 +60,14 @@ a{
     color: rgb(0, 0, 0);
 }
 
+.navbar-toggler{
+    color: rgb(253, 179, 136);
+}
+
+.nav-link{
+    color: rgb(255, 127, 80);
+    text-decoration: underline;
+}
 
 /* CONTENIDO PRINCIPAL */
 .main{ 
@@ -75,6 +83,7 @@ h1{
     font-size: 30px;
     text-align: center;
     padding: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -229,6 +238,13 @@ textarea:focus{
     margin: 15px;
 }
 
+.iconsFooter i{
+    display: flexbox;
+    width: 10rem;
+    font-size: 40px;
+    margin: 1rem;
+}
+
 /* KEYFRAMES */
 @keyframes animacion{
     0%{
@@ -265,6 +281,9 @@ textarea:focus{
     }
     .mainTurnos{
         background-size: cover;
+    }
+    .iconsFooter i{
+        width: 5rem;
     }
         
 }
