@@ -196,7 +196,7 @@ textarea:focus{
     background-image: url(../img/consultorio.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 100%;
 }
 
 .formTurnos{
