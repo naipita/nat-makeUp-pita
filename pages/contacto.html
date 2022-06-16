@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Animate_animated -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/459d74b501.js" crossorigin="anonymous"></script>
+    <!-- Icono de la página -->
     <link rel="shorcut icon" href="../img/Logo.jpg">
+    <!-- Mi estilo -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Nat-MakeUp Face&Body | Contacto</title>
 </head>
+
 <body class="body">
     <!-- ENCABEZADO -->
     <header class="header">
@@ -16,14 +26,33 @@
             <img class="logo" src="../img/Logo.jpg" alt="Logo">
         </a>
         <!-- Menú de Navegación -->
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="quien-soy.html">Quién Soy</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="turnos.html">Turnos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quien-soy.html">Quién Soy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="turnos.html">Turnos</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </nav>
     </header>
     <!-- CONTENIDO PRINCIPAL -->
@@ -31,15 +60,15 @@
         <h1 class="wow animate__animated animate__pulse">Contacto</h1>
         <form class="form" action="#" method="get">
             <label>
-                <input type="text" placeholder="Nombre Completo" name="nombreCompleto">                
-                <input type="tel" placeholder="Teléfono" name="telefono">                
-                <input type="email" placeholder="Email" name="email">               
-            </label>            
+                <input type="text" placeholder="Nombre Completo" name="nombreCompleto">
+                <input type="tel" placeholder="Teléfono" name="telefono">
+                <input type="email" placeholder="Email" name="email">
+            </label>
             <h3>Tratamientos de interes</h3>
             <span>Facial</span>
-            <input type="checkbox" name="opcion">            
+            <input type="checkbox" name="opcion">
             <span>Corporal</span>
-            <input type="checkbox" name="opcion">            
+            <input type="checkbox" name="opcion">
             <span>Consulta</span>
             <input type="checkbox" name="opcion">
             <p class="wow animate__animated animate__backInLeft">Deja tu Comentario</p>
@@ -52,27 +81,19 @@
     </main>
     <!-- PIE DE PÁGINA -->
     <footer class="footer">
-        <ul class="footerFlex">
-            <li>
-                <a href="https://www.facebook.com/natmakeupface" target="_blank">
-                    <img class="redes" src="../img/Facebook.png" alt="Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/natmakeupbsas" target="_blank">
-                    <img class="redes" src="../img/Instagram.jpg" alt="Instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://ar.linkedin.com" target="_blank">
-                    <img class="redes" src="../img/Linkedin.png" alt="Linkedin">
-                </a>
-            </li>
-        </ul>
+        <section class="iconsFooter">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </section>
     </footer>
     <script src="./js/wow.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
