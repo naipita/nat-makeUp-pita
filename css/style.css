@@ -54,6 +54,7 @@ nav ul li{
 a{
     color: rgb(255, 127, 80);
     text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .menu a:hover{
@@ -108,6 +109,10 @@ h1{
 }
 
 /* QUIÉN SOY */
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .mainQuienSoy{
     display: flex;
     flex-direction: column;   
