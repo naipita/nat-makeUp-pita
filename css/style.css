@@ -158,11 +158,12 @@ h2{
     background-image: url(../img/local.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 
 .form{
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 150px;
     justify-content: space-around;    
     justify-items: center;   
 }
