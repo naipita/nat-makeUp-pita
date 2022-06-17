@@ -163,28 +163,40 @@ h2{
 
 .form{
     display: grid;
-    grid-template-columns: 150px;
+    grid-template-columns: 250px;
     justify-content: space-around;    
-    justify-items: center;   
+    justify-items: center;  
+    align-items: baseline; 
 }
 
 .form input{
     margin: 5px;    
-    width: 240px;    
+    width: 250px; 
+    border-radius: 10px;   
 }
 
 .form input:focus{
     background-color: rgb(250, 235, 215);
 }
 
+.form h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .centrado{
     text-align: center;
+    margin: 0;
 }
 
 .boton:hover{
     transform: scale(1.1);
     background-color: rgb(255, 127, 80);
     transition: 2s;
+}
+
+textarea{
+    height: 20vh;
+    border-radius: 10px;
 }
 
 textarea:focus{
