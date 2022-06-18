@@ -243,23 +243,41 @@ textarea:focus{
 
 .formTurnos{
     display: grid;
-    grid-auto-columns: min-content;
-    justify-content: center;
-    grid-row-gap: 15px;
+    grid-auto-columns: 450px;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 .formTurnos input{
     margin: 1px;
+    border-radius: 5px;
 }
 
 .formTurnos input:focus{
     background-color: rgb(250, 235, 215);
 }
 
+input[type="date"]{
+    padding-left: 2px;
+    margin-left: 4px;
+}
+
+.textareaTurnos{
+    min-width: 200px;
+}
+
+.botonTurnos{
+    width: 23vw;
+}
+
 .botonTurnos:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: rgb(250, 235, 215);
     transition: 2s;
+}
+
+.focus{
+    border-radius: 5px;
 }
 
 .focus:focus{
@@ -336,6 +354,12 @@ textarea:focus{
     }
     .mainTurnos{
         background-size: cover;
+    }
+    .formTurnos{
+        grid-auto-columns: 200px;
+    }
+    .textareaTurnos{
+        width: 100px;
     }
     .iconsFooter i{
         width: 5rem;
