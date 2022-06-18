@@ -142,6 +142,7 @@ h2{
     padding: 0.5rem;
     height: 36rem;
     color: black;
+    opacity: 80%;
 }
 
 .caja:nth-child(1){
@@ -329,7 +330,7 @@ textarea:focus{
     }
     .menu{
         flex-direction: column;
-    }
+    }  
     .mainContacto{
         background-size: cover;
     }
@@ -338,7 +339,18 @@ textarea:focus{
     }
     .iconsFooter i{
         width: 5rem;
+    }        
+}
+
+@media(max-width: 420px){
+    .caja{
+        width: 20rem;
     }
-        
+    .caja:nth-child(4){
+        height: 10rem;
+    }
+    .caja:nth-child(5){
+        height: 10rem;
+    }
 }
   
