@@ -1,0 +1,28 @@
+// QUIÉN SOY
+.mainQuienSoy {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, rgb(252, 231, 217), rgb(250, 182, 137));
+
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .imgQuienSoy {
+        max-width: 400px;
+        margin: 10px;
+    }
+
+    p {
+        font-family: cursive;
+        max-width: 700px;
+    }
+
+    li {
+        font-family: cursive;
+        list-style: none;
+    }
+}

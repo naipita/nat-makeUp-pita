@@ -1,0 +1,41 @@
+// MEDIA QUERY
+@media(max-width: 768px){
+    .header{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu{
+        flex-direction: column;
+    }  
+    #carouselExampleSlidesOnly{
+        margin-left:0;
+        width: 100%;
+    }
+    .mainContacto{
+        background-size: cover;
+    }
+    .mainTurnos{
+        background-size: cover;
+    }
+    .formTurnos{
+        grid-auto-columns: 200px;
+    }
+    .textareaTurnos{
+        width: 100px;
+    }
+    .iconsFooter i{
+        width: 5rem;
+    }        
+}
+
+@media(max-width: 420px){
+    .caja{
+        width: 20rem;
+    }
+    .caja:nth-child(4){
+        height: 10rem;
+    }
+    .caja:nth-child(5){
+        height: 10rem;
+    }
+}

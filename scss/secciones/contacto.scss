@@ -1,0 +1,51 @@
+// CONTACTO
+.mainContacto {
+    grid-area: main;
+    background-image: url(../img/local.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+
+    .form {
+        display: grid;
+        grid-template-columns: 250px;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: baseline;
+    }
+
+    .form input {
+        margin: 5px;
+        width: 250px;
+        border-radius: 10px;
+
+        &:focus {
+            background-color: rgb(250, 235, 215);
+        }
+    }
+
+    h3 {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    textarea{
+        height: 20vh;
+        border-radius: 10px;
+        &:focus{
+            background-color: rgb(250, 235, 215);
+        }
+    }
+
+    .boton{
+        &:hover{
+            transform: scale(1.1);
+            background-color: rgb(255, 127, 80);
+            transition: 2s;
+        }
+    }
+
+    .centrado {
+        text-align: center;
+        margin: 0;
+    }
+}
