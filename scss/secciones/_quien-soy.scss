@@ -1,14 +1,13 @@
 // QUIÉN SOY
 .mainQuienSoy {
     grid-area: main;
-    display: flex;
+    @extend %estiloFlexCenter;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-image: linear-gradient(to left, rgb(252, 231, 217), rgb(250, 182, 137));
 
     h2 {
-        font-family: 'Times New Roman', Times, serif;
+        font-family: $tipografiaTitulos;
     }
 
     .imgQuienSoy {
@@ -17,12 +16,12 @@
     }
 
     p {
-        font-family: cursive;
+        font-family: $tipografiaParrafo;
         max-width: 700px;
     }
 
     li {
-        font-family: cursive;
+        font-family: $tipografiaParrafo;
         list-style: none;
     }
 }

@@ -20,26 +20,26 @@
         border-radius: 10px;
 
         &:focus {
-            background-color: rgb(250, 235, 215);
+            background-color: $colorPrincipal;
         }
     }
 
     h3 {
-        font-family: 'Times New Roman', Times, serif;
+        font-family: $tipografiaTitulos;
     }
 
     textarea{
         height: 20vh;
         border-radius: 10px;
         &:focus{
-            background-color: rgb(250, 235, 215);
+            background-color: $colorPrincipal;
         }
     }
 
     .boton{
         &:hover{
             transform: scale(1.1);
-            background-color: rgb(255, 127, 80);
+            background-color: $colorSecundario;
             transition: 2s;
         }
     }

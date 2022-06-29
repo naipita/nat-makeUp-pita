@@ -1,3 +1,15 @@
+.body h1 {
+  color: coral;
+  font-style: oblique;
+  font-size: 30px;
+  text-align: center;
+  padding: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif; }
+
+.header .menu, .main .sectionFlex, .mainQuienSoy, .footer {
+  display: flex;
+  justify-content: center; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -6,15 +18,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-flow: column;
-  grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer";
-  background-color: #f8f5f0; }
-  .body h1 {
-    color: coral;
-    font-style: oblique;
-    font-size: 30px;
-    text-align: center;
-    padding: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif; }
+  grid-template-areas: "header header header header header" "main main main main main" "footer footer footer footer footer"; }
 
 .header {
   grid-area: header;
@@ -31,9 +35,6 @@
       transition: 5s; }
   .header .navbar-toggler {
     color: #fdb388; }
-  .header .menu {
-    display: flex;
-    justify-content: center; }
   .header ul li {
     padding: 10px;
     margin: 20px;
@@ -42,7 +43,7 @@
   .header .nav-link {
     color: coral;
     text-decoration: underline;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
     .header .nav-link:hover {
       color: black; }
 
@@ -51,11 +52,8 @@
   animation-name: animacion;
   animation-duration: 6s;
   animation-iteration-count: infinite; }
-  .main .sectionFlex {
-    display: flex;
-    justify-content: center; }
   .main p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: cursive;
     max-width: 200px;
     margin-top: 50px;
     margin-right: 15px;
@@ -67,13 +65,11 @@
 
 .mainQuienSoy {
   grid-area: main;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-image: linear-gradient(to left, #fce7d9, #fab689); }
   .mainQuienSoy h2 {
-    font-family: 'Times New Roman', Times, serif; }
+    font-family: "Times New Roman", Times, serif; }
   .mainQuienSoy .imgQuienSoy {
     max-width: 400px;
     margin: 10px; }
@@ -108,10 +104,10 @@
       background-image: url(https://adrianalopezmakeup.com.ar/wp-content/uploads/2016/04/micaela_fiesta-91.jpg);
       background-size: 90%; }
   .mainServicios h3 {
-    font-family: 'Times New Roman', Times, serif; }
+    font-family: "Times New Roman", Times, serif; }
   .mainServicios ul li {
     list-style: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 15px; }
   .mainServicios .carousel {
     width: 75%;
@@ -137,7 +133,7 @@
     .mainContacto .form input:focus {
       background-color: antiquewhite; }
   .mainContacto h3 {
-    font-family: 'Times New Roman', Times, serif; }
+    font-family: "Times New Roman", Times, serif; }
   .mainContacto textarea {
     height: 20vh;
     border-radius: 10px; }
@@ -188,8 +184,6 @@
 .footer {
   grid-area: footer;
   background-color: antiquewhite;
-  display: flex;
-  justify-content: center;
   flex-direction: row; }
   .footer .iconsFooter {
     display: flex; }

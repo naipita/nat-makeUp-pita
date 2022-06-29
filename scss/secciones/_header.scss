@@ -1,12 +1,12 @@
 // HEADER
 .header {
     grid-area: header;
-    background-color: rgb(250, 235, 215);
+    background-color: $colorPrincipal;
     display: flex;
     justify-content: space-between;
 
     .logo {
-        border: solid 2px rgb(0, 0, 0);
+        border: solid 2px $colorTerciario;
         border-radius: 100%;
         width: 200px;
         margin: 25px;
@@ -22,8 +22,7 @@
     }
 
     .menu {
-        display: flex;
-        justify-content: center;
+       @extend %estiloFlexCenter;
     }
 
     ul li {
@@ -34,12 +33,12 @@
     }
 
     .nav-link {
-        color: rgb(255, 127, 80);
+        color: $colorSecundario;
         text-decoration: underline;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: $tipografiaMenu;
 
         &:hover {
-            color: rgb(0, 0, 0);
+            color: $colorTerciario;
         }
     }
 }

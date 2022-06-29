@@ -18,7 +18,7 @@
         border-radius: 5px;
 
         &:focus {
-            background-color: rgb(250, 235, 215);
+            background-color: $colorPrincipal;
         }
 
         [type="date"] {
@@ -31,7 +31,7 @@
         border-radius: 5px;
 
         &:focus {
-            background-color: rgb(250, 235, 215);
+            background-color: $colorPrincipal;
         }
     }
 
@@ -48,7 +48,7 @@
 
         &:hover {
             transform: scale(1.05);
-            background-color: rgb(250, 235, 215);
+            background-color: $colorPrincipal;
             transition: 2s;
         }
     }

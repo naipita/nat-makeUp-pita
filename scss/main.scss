@@ -1,10 +1,22 @@
+// variables
+@import './variables.scss/colores';
+@import './variables.scss/tipografia';
+@import './variables.scss/extend';
+
+// body
 @import './secciones/body';
+// header
 @import './secciones/header';
+// inicio
 @import './secciones/inicio';
+// pages
 @import './secciones/quien-soy';
 @import './secciones/servicios';
 @import './secciones/contacto';
 @import './secciones/turnos';
+// footer
 @import './secciones/footer';
+// keyframes
 @import './secciones/keyframes';
+// media query
 @import './secciones/media-query'

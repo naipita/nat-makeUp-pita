@@ -1,9 +1,8 @@
 // FOOTER
 .footer {
     grid-area: footer;
-    background-color: rgb(250, 235, 215);
-    display: flex;
-    justify-content: center;
+    background-color: $colorPrincipal;
+    @extend %estiloFlexCenter;
     flex-direction: row;
 
     .iconsFooter {
@@ -15,10 +14,10 @@
     }
 
     a {
-        color: rgb(0, 0, 0);
+        color: $colorTerciario;
 
         &:hover {
-            color: rgb(255, 127, 80);
+            color: $colorSecundario;
         }
     }
 
