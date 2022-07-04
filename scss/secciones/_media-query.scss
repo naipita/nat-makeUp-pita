@@ -3,6 +3,9 @@
     .header{
         justify-content: space-around;
         align-items: center;
+        ul li {
+            margin-top:  0;
+        }
     }
     .menu{
         flex-direction: column;

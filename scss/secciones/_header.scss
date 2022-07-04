@@ -1,12 +1,12 @@
 // HEADER
 .header {
     grid-area: header;
-    background-color: $colorPrincipal;
+    background-color: map-get($map: $colores, $key: 'colorPrincipal');
     display: flex;
     justify-content: space-between;
 
     .logo {
-        border: solid 2px $colorTerciario;
+        border: solid 2px map-get($map: $colores, $key:'colorTerciario');
         border-radius: 100%;
         width: 200px;
         margin: 25px;
@@ -33,12 +33,12 @@
     }
 
     .nav-link {
-        color: $colorSecundario;
+        color: map-get($map: $colores, $key:'colorSecundario');
         text-decoration: underline;
         font-family: $tipografiaMenu;
 
         &:hover {
-            color: $colorTerciario;
+            color: map-get($map: $colores, $key:'colorTerciario');
         }
     }
 }

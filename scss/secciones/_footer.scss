@@ -1,7 +1,7 @@
 // FOOTER
 .footer {
     grid-area: footer;
-    background-color: $colorPrincipal;
+    background-color: map-get($map: $colores, $key:'colorPrincipal');
     @extend %estiloFlexCenter;
     flex-direction: row;
 
@@ -14,10 +14,10 @@
     }
 
     a {
-        color: $colorTerciario;
+        color: map-get($map: $colores, $key:'colorTerciario');
 
         &:hover {
-            color: $colorSecundario;
+            color: map-get($map: $colores, $key:'colorSecundario');
         }
     }
 
