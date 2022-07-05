@@ -49,19 +49,19 @@
 
 .main {
   grid-area: main;
-  min-height: 80vh;
+  min-height: 60vh;
   animation-name: animacion;
   animation-duration: 6s;
   animation-iteration-count: infinite; }
   .main p {
     font-family: cursive;
     max-width: 200px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-right: 30px;
     text-align: center; }
   .main .imgIndex {
     max-width: 250px;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 5px; }
 
 .mainQuienSoy {
