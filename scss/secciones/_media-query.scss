@@ -21,7 +21,8 @@
         background-size: cover;
     }
     .formTurnos{
-        grid-auto-columns: 200px;
+        grid-template-columns: min-content;
+        justify-items: center;
     }
     .textareaTurnos{
         width: 100px;
