@@ -120,7 +120,7 @@
   background-image: url(../img/local.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 150%; }
+  background-size: cover; }
   .mainContacto .form {
     display: grid;
     grid-template-columns: 250px;
@@ -154,7 +154,7 @@
   background-image: url(../img/consultorio.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%; }
+  background-size: cover; }
   .mainTurnos .formTurnos {
     display: grid;
     grid-auto-columns: 450px;
@@ -223,10 +223,6 @@
   #carouselExampleSlidesOnly {
     margin-left: 0;
     width: 100%; }
-  .mainContacto {
-    background-size: cover; }
-  .mainTurnos {
-    background-size: cover; }
   .formTurnos {
     grid-template-columns: min-content;
     justify-items: center; }
